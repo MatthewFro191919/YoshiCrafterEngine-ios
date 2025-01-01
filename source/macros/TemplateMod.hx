@@ -18,7 +18,7 @@ class TemplateMod {
         var folder = '${Compiler.getOutput()}/../bin/assets/misc';
         FileSystem.createDirectory(folder);
         File.copy('template_mod.zip', '$folder/template_mod.zip');
-        return $v{null};
+        return {null};
     }
     #end
 }
