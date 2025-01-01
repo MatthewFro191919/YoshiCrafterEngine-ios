@@ -29,18 +29,25 @@ jobs:
 
       - name: Install Libraries
         run: |
-          haxelib install lime 8.1.2 --quiet
+          haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp --quiet
+          haxelib git lime https://github.com/mcagabe19-stuff/lime --quiet
           haxelib install openfl 9.3.3 --quiet
           haxelib install flixel 5.6.1 --quiet
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
+          haxelib git discord_rpc_yce https://github.com/Yoshman29-FunkinArchive/LincDiscordRPCButtons
+          haxelib git SScript https://github.com/MobilePorting/SScript c4e241b254595531396d5e52e8401c9adc3f344f --quiet
+          haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
+          haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
+          haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
           haxelib install tjson 1.4.0 --quiet
           haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e --quiet
-          haxelib git linc_luajit https://github.com/superpowers04/linc_luajit 1906c4a96f6bb6df66562b3f24c62f4c5bba14a7 --quiet
-          haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc 3538a1c2bb07b04208cd014220207f8173acdb21 --quiet
+          haxelib git linc_luajit https://github.com/mcagabe19-stuff/linc_luajit-legacy 923a8262a7a8dcd166264dcf22cb7395a11fba65 --quiet
+          haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc 3538a1c2bb07b04208cd014220207f8173acdb21 --quiet --skip-dependencies
           haxelib git hxvlc https://github.com/MAJigsaw77/hxvlc 70e7f5f3e76d526ac6fb8f0e6665efe7dfda589d --quiet --skip-dependencies
           haxelib git funkin.vis https://github.com/FunkinCrew/funkVis d5361037efa3a02c4ab20b5bd14ca11e7d00f519 --quiet --skip-dependencies
           haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666 --quiet
+          haxelib git spinehaxe https://github.com/bendmorris/spinehaxe
 
       - name: Compile
         run: haxelib run lime build windows -D officialBuild
@@ -65,18 +72,26 @@ jobs:
       - name: Install Libraries
         run: |
           DEBIAN_FRONTEND=noninteractive sudo apt-get -qq install -o Dpkg::Progress-Fancy="0" -o APT::Color="0" -o Dpkg::Use-Pty="0" libvlc-dev libvlccore-dev < /dev/null > /dev/null
-          haxelib install lime 8.1.2 --quiet
+          haxelib git hxcpp https://github.com/mcagabe19-stuff/hxcpp --quiet
+          haxelib git lime https://github.com/mcagabe19-stuff/lime --quiet
           haxelib install openfl 9.3.3 --quiet
           haxelib install flixel 5.6.1 --quiet
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
+          haxelib git discord_rpc_yce https://github.com/Yoshman29-FunkinArchive/LincDiscordRPCButtons
+          haxelib git SScript https://github.com/MobilePorting/SScript c4e241b254595531396d5e52e8401c9adc3f344f --quiet
+          haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
+          haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
+          haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
           haxelib install tjson 1.4.0 --quiet
           haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e --quiet
-          haxelib git linc_luajit https://github.com/superpowers04/linc_luajit 1906c4a96f6bb6df66562b3f24c62f4c5bba14a7 --quiet
-          haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc 3538a1c2bb07b04208cd014220207f8173acdb21 --quiet
+          haxelib git linc_luajit https://github.com/mcagabe19-stuff/linc_luajit-legacy 923a8262a7a8dcd166264dcf22cb7395a11fba65 --quiet
+          haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc 3538a1c2bb07b04208cd014220207f8173acdb21 --quiet --skip-dependencies
           haxelib git hxvlc https://github.com/MAJigsaw77/hxvlc 70e7f5f3e76d526ac6fb8f0e6665efe7dfda589d --quiet --skip-dependencies
           haxelib git funkin.vis https://github.com/FunkinCrew/funkVis d5361037efa3a02c4ab20b5bd14ca11e7d00f519 --quiet --skip-dependencies
           haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666 --quiet
+          haxelib git spinehaxe https://github.com/bendmorris/spinehaxe
+
 
       - name: Compile
         run: haxelib run lime build linux -D officialBuild
@@ -109,14 +124,19 @@ jobs:
           haxelib install flixel 5.6.1 --quiet
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
+          haxelib git discord_rpc_yce https://github.com/Yoshman29-FunkinArchive/LincDiscordRPCButtons
           haxelib git SScript https://github.com/MobilePorting/SScript c4e241b254595531396d5e52e8401c9adc3f344f --quiet
+          haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
+          haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
+          haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
           haxelib install tjson 1.4.0 --quiet
           haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e --quiet
-          haxelib git linc_luajit https://github.com/superpowers04/linc_luajit 1906c4a96f6bb6df66562b3f24c62f4c5bba14a7 --quiet
+          haxelib git linc_luajit https://github.com/mcagabe19-stuff/linc_luajit-legacy 923a8262a7a8dcd166264dcf22cb7395a11fba65 --quiet
           haxelib git hxdiscord_rpc https://github.com/MAJigsaw77/hxdiscord_rpc 3538a1c2bb07b04208cd014220207f8173acdb21 --quiet --skip-dependencies
           haxelib git hxvlc https://github.com/MAJigsaw77/hxvlc 70e7f5f3e76d526ac6fb8f0e6665efe7dfda589d --quiet --skip-dependencies
           haxelib git funkin.vis https://github.com/FunkinCrew/funkVis d5361037efa3a02c4ab20b5bd14ca11e7d00f519 --quiet --skip-dependencies
           haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666 --quiet
+          haxelib git spinehaxe https://github.com/bendmorris/spinehaxe
 
       - name: Compile
         run: haxelib run lime build mac
@@ -146,7 +166,11 @@ jobs:
           haxelib install flixel 5.6.1 --quiet
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
+          haxelib git discord_rpc_yce https://github.com/Yoshman29-FunkinArchive/LincDiscordRPCButtons
           haxelib git SScript https://github.com/MobilePorting/SScript c4e241b254595531396d5e52e8401c9adc3f344f --quiet
+          haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
+          haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
+          haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
           haxelib install tjson 1.4.0 --quiet
           haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e --quiet
           haxelib git linc_luajit https://github.com/mcagabe19-stuff/linc_luajit-legacy 923a8262a7a8dcd166264dcf22cb7395a11fba65 --quiet
@@ -154,7 +178,8 @@ jobs:
           haxelib git hxvlc https://github.com/MAJigsaw77/hxvlc 70e7f5f3e76d526ac6fb8f0e6665efe7dfda589d --quiet --skip-dependencies
           haxelib git funkin.vis https://github.com/FunkinCrew/funkVis d5361037efa3a02c4ab20b5bd14ca11e7d00f519 --quiet --skip-dependencies
           haxelib git grig.audio https://gitlab.com/haxe-grig/grig.audio.git cbf91e2180fd2e374924fe74844086aab7891666 --quiet
-          haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools 727693f0a76c6e396df675bb0ed95d7639a4db01 --quiet --skip-dependencies
+          haxelib git spinehaxe https://github.com/bendmorris/spinehaxe
+          haxelib git extension-androidtools https://github.com/MAJigsaw77/extension-androidtools --quiet --skip-dependencies
 
       - name: Configure Android
         run: |
@@ -191,10 +216,10 @@ jobs:
           haxelib install flixel 5.6.1 --quiet
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
-          haxelib git discord_rpc_yce https://github.com/YoshiCrafter29/linc_discord-rpc
+          haxelib git discord_rpc_yce https://github.com/Yoshman29-FunkinArchive/LincDiscordRPCButtons
           haxelib git SScript https://github.com/MobilePorting/SScript c4e241b254595531396d5e52e8401c9adc3f344f --quiet
-          haxelib git flixel-textureatlas-yoshiengine https://github.com/YoshiCrafter29/Flixel-TextureAtlas-YoshiCrafterEngine
-          haxelib git hscript-yoshiengine https://github.com/YoshiCrafter29/hscript-improved
+          haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
+          haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
           haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
           haxelib install tjson 1.4.0 --quiet
           haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e --quiet
