@@ -36,6 +36,7 @@ jobs:
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
           haxelib install discord_rpc --quiet
+          haxelib install hxp --quiet
           haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
           haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
           haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel --quiet
@@ -79,6 +80,7 @@ jobs:
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
           haxelib install discord_rpc --quiet
+          haxelib install hxp --quiet
           haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
           haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
           haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
@@ -125,6 +127,7 @@ jobs:
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
           haxelib install discord_rpc --quiet
+          haxelib install hxp --quiet
           haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
           haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
           haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
@@ -167,6 +170,7 @@ jobs:
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
           haxelib install discord_rpc --quiet
+          haxelib install hxp --quiet
           haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
           haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
           haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
@@ -217,6 +221,7 @@ jobs:
           haxelib install flixel-addons 3.2.2 --quiet
           haxelib install flixel-tools 1.5.1 --quiet
           haxelib install discord_rpc --quiet
+          haxelib install hxp --quiet
           haxelib git flixel-textureatlas-yoshiengine https://github.com/Smokey555/Flixel-TextureAtlas
           haxelib git hscript-yoshiengine https://github.com/CodenameCrew/hscript-improved
           haxelib git flixel-yc29 https://github.com/YoshiCrafter29/flixel
